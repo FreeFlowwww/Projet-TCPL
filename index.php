@@ -194,31 +194,30 @@
       
       
         
-        <form id="contact-form" class="form-horizontal" role="form">
+        <form id="contact-form" class="form-horizontal" action="sendMail.php" method="POST">
            
           <div class="form-group">
             <div class="col-sm-12">
-              <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+              <input type="text" class="form-control" id="name" placeholder="NAME" name="nom"  required>
             </div>
           </div>
-    
           <div class="form-group">
             <div class="col-sm-12">
-              <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+              <input type="text" class="form-control" id="sujet" placeholder="SUBJECT" name="sujet"  required>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-12">
+              <input type="email" class="form-control" id="email" placeholder="EMAIL" name="mail"  required>
             </div>
           </div>
     
           <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
           
           <button class="message-contact" id="submit" type="submit" >Envoyer </button>
-          
-         
-            
-          
+ 
         </form>
-        
-      
-        
+
           <div class="direct-contact-container">
     
             <ul class="contact-list">
